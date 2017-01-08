@@ -427,7 +427,7 @@ namespace WindowsFormsApplication1
                             }
 
                             #region đọc file log ghi số trận
-                            StreamReader sr = File.OpenText(@"C:\Users\BarryAllen\Documents\Visual Studio 2013\Projects\emgu\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\SoTran\SoTran.txt");
+                            StreamReader sr = File.OpenText(@"SoTran\SoTran.txt");
                             so_tran = Int32.Parse(sr.ReadLine()) + 1;
                             sr.Dispose();
                             #endregion
@@ -500,7 +500,7 @@ namespace WindowsFormsApplication1
                 bmpScreenshot.Save(subPath + "test" + ".png", ImageFormat.Png);
             }
            // bmpScreenshot.Dispose();
-            //aa
+            
             
         }
         private void write_log_file(string text)
@@ -518,11 +518,11 @@ namespace WindowsFormsApplication1
             gfxScreenshot.CopyFromScreen(Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, 0, 0, Screen.PrimaryScreen.Bounds.Size, CopyPixelOperation.SourceCopy);
             string tpm = file_name_to_save + ".png";
 
-            string subPath = @"C:\Users\BarryAllen\Documents\Visual Studio 2013\Projects\emgu\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\SoTran";
+            string subPath = @"SoTran\";
 
             System.IO.Directory.CreateDirectory(subPath);
 
-            bmpScreenshot.Save(@"C:\Users\BarryAllen\Documents\Visual Studio 2013\Projects\emgu\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\SoTran\" + file_name_to_save + ".png", ImageFormat.Png);
+            bmpScreenshot.Save(@"SoTran\" + file_name_to_save + ".png", ImageFormat.Png);
             bmpScreenshot.Dispose();
         }
         private void timer1_Tick(object sender, EventArgs e)
