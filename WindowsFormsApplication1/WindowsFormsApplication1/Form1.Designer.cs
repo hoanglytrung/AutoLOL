@@ -153,7 +153,7 @@
             this.LoadGame_time.Name = "LoadGame_time";
             this.LoadGame_time.Size = new System.Drawing.Size(33, 20);
             this.LoadGame_time.TabIndex = 14;
-            this.LoadGame_time.TextChanged += new System.EventHandler(this.LoadGame_time_TextChanged);
+
             // 
             // Click_delay
             // 
@@ -161,7 +161,7 @@
             this.Click_delay.Name = "Click_delay";
             this.Click_delay.Size = new System.Drawing.Size(33, 20);
             this.Click_delay.TabIndex = 15;
-            this.Click_delay.TextChanged += new System.EventHandler(this.Click_delay_TextChanged);
+
             // 
             // label1
             // 
