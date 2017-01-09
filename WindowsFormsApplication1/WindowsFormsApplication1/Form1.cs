@@ -713,7 +713,7 @@ namespace WindowsFormsApplication1
         }
         private void write_log_file(string text)
         {
-            string path = @"C:\Users\BarryAllen\Documents\Visual Studio 2013\Projects\emgu\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\SoTran\SoTran.txt";
+            string path = @"SoTran\SoTran.txt";
             StreamWriter sw = File.CreateText(path);
             sw.Write(text);
             sw.Dispose();
